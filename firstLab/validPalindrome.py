@@ -1,5 +1,5 @@
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
+    def isPalindrome(self, s):
         s = s.lower()
         cleaned_s = ""
 
@@ -7,4 +7,4 @@ class Solution:
             if char.isalnum():
                 cleaned_s += char
 
-               return cleaned_s == cleaned_s[::-1]
+        return cleaned_s == cleaned_s[::-1]
