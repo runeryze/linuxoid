@@ -1,5 +1,5 @@
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
+    def lengthOfLongestSubstring(self, s):
         lastCharIndex = {}
         left = 0
         max_len = 0
@@ -10,10 +10,4 @@ class Solution:
 
             lastCharIndex[s[right]] = right
             max_len = max(max_len, right - left + 1)
-            print(lastCharIndex)
         return max_len
-
-solution = Solution()
-
-print("abcdacb")
-print(solution.lengthOfLongestSubstring("abcdacb"))
